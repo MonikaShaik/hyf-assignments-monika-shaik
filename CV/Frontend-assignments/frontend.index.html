@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts house generator</title>
+</head>
+
+<body>
+
+  <input type="text" id="name-input" placeholder="Enter your name" />
+
+  <button id="generate-button">Generate House</button>
+
+
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div id="house-result" class="tag"></div>
+
+
+      <div class="controls">
+        <button id="try-again-button">Try again</button>
+        <button id="see-members">See Members</button>
+      </div>
+
+      <ul id="members-list"></ul>
+
+      <div class="house-images">
+
+        <img id="Gryffindor" class="Gryffindor-image" src="./Hogwart.img-s/gryffindor_pro.png" alt="Gryffindor House"
+          style="display:none;">
+        <img id="Hufflepuff" class="Hufflepuff-image" src="./Hogwart.img-s/hufflepuff_pro.png" alt="Hufflepuff House"
+          style="display:none;">
+        <img id="Ravenclaw" class="Ravenclaw-image" src="./Hogwart.img-s/ravenclaw_pro.png" alt="Ravenclaw House"
+          style="display:none;">
+        <img id="Slytherin" class="Slytherin-image" src="./Hogwart.img-s/slytherin_pro.png" alt="Slytherin House"
+          style="display:none;">
+      </div>
+    </div>
+  </div>
+
+
+
+  <link rel="stylesheet" href="./frontend.style.css">
+  <script src="./frontend.js"></script>
+</body>
+
+</html>
