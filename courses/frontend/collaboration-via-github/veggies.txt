@@ -1,0 +1,7 @@
+tomato
+broccoli
+onion
+carrot
+potato
+radish
+corn
