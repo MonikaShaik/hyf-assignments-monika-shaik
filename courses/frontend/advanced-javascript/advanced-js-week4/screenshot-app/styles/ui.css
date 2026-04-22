@@ -26,14 +26,6 @@ body {
     );
 }
 
-h1 {
-  margin: 0 0 28px;
-  font-size: clamp(42px, 7vw, 76px);
-  line-height: 1;
-  letter-spacing: -0.06em;
-  color: var(--dashboard-text-primary);
-}
-
 label {
   display: block;
   margin-bottom: 10px;
@@ -77,6 +69,11 @@ button {
   width: 150px;
   height: 50px;
   display: none;
+}
+
+#deleteScreenshotButton {
+  width: 150px;
+  height: 50px;
 }
 
 #generateScreenshotButton {
@@ -123,23 +120,6 @@ button {
 .delete-screenshot-button {
   margin-top: 16px;
   background: var(--dashboard-accent-peach);
-}
-
-.save-screenshot-button img,
-.delete-screenshot-button img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
-}
-
-.screenshot-list {
-  width: min(100%, 760px);
-  padding: 22px;
-  border-radius: 28px;
-  background: var(--dashboard-card-bg);
-  border: 1px solid var(--dashboard-card-border);
-  box-shadow: 0 24px 60px var(--dashboard-card-shadow);
 }
 
 .screenshot-item {
@@ -190,13 +170,43 @@ button:active {
     margin-right: 0;
   }
 
-  .save-screenshot-button {
-    width: 100px;
-    height: 50px;
-    display: none;
-  }
-
   .screenshot-list {
     padding: 16px;
   }
+}
+
+/* clean styles */
+h1 {
+  margin: 0 0 28px;
+  font-size: clamp(42px, 7vw, 76px);
+  text-align: center;
+  color: var(--dashboard-text-primary);
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+}
+
+#saveScreenshotButton {
+  width: 150px;
+  height: 50px;
+  display: none;
+}
+
+#deleteScreenshotButton {
+  width: 150px;
+  height: 50px;
+}
+
+.screenshot-list {
+  padding: 22px;
+  border-radius: 28px;
+  border: 1px solid var(--dashboard-card-border);
+  box-shadow: 0 24px 60px var(--dashboard-card-shadow);
+  width: 700px;
 }
