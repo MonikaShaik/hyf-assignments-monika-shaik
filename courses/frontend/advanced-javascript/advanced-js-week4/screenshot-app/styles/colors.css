@@ -1,0 +1,22 @@
+:root {
+  --dashboard-card-bg: #f5eff5;
+  --dashboard-card-border: #e8dce8;
+  --dashboard-card-shadow: rgba(92, 89, 111, 0.18);
+
+  --dashboard-text-primary: #3a3548;
+  --dashboard-text-secondary: #7b7288;
+  --dashboard-text-muted: #a095a4;
+
+  --dashboard-preview-blue-dark: #2e62b0;
+  --dashboard-preview-blue: #2a78c9;
+  --dashboard-preview-blue-soft: #5d96cb;
+  --dashboard-preview-indigo: #5a71a8;
+  --dashboard-preview-cyan: #3786cc;
+
+  --dashboard-accent-peach: #dbb2a7;
+  --dashboard-accent-sand: #e3d1a3;
+
+  --dashboard-status-green: #5fc7a3;
+  --dashboard-line: #c5b6c6;
+  --dashboard-icon-muted: #a6adce;
+}
