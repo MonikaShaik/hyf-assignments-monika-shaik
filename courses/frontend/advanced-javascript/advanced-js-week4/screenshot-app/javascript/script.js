@@ -1,3 +1,6 @@
 import FormClass from "./form-class.js";
+import ScreenshotListClass from "./list-class.js";
 
-const object = new FormClass();
+new FormClass();
+
+const screenshotList = new ScreenshotListClass();

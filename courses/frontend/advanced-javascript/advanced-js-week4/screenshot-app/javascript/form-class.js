@@ -2,7 +2,8 @@ import AppError from "./app-error-class.js";
 
 class FormClass {
   constructor() {
-    document.body.appendChild(this.render());
+    const containerElement = document.getElementById("container");
+    containerElement.appendChild(this.render());
     document.getElementById("screenshotImage").style.display = "none";
     this.eventListers();
   }
@@ -26,7 +27,7 @@ class FormClass {
       <button id="generateScreenshotButton">Generate Screenshot</button>
       <img id="screenshotImage" src="" alt="Screenshot image here" height="300" />
       <br>
-      <button id="saveScreenshotButton" type="button" class="save-screenshot-button">
+      <button id="saveScreenshotButton" type="button" class="save-screenshot-button">Save
       </button>
     `;
 
@@ -74,8 +75,8 @@ class FormClass {
 
       const APIresponce = await fetch(apiURL, {
         headers: {
-          "X-RapidAPI-Key":
-            "7e545b9cbbmsh661189d38c2e4d5p18aaf3jsn07cffe714fb9",
+          "x-rapidapi-key":
+            "ab0f35a6a4msh0a633974281840ep11ca56jsn691f23b361c2",
           "x-rapidapi-host": "website-screenshot6.p.rapidapi.com",
           "Content-Type": "application/json",
         },
@@ -110,7 +111,7 @@ class FormClass {
   async saveScreenshot() {
     try {
       const apiUrl =
-        "https://crudcrud.com/api/47664b37a5c847d18c2fc25560eff020/screenshots";
+        "https://crudcrud.com/api/557daf6ad5764666a1571229738c7d81/screenshots";
 
       const options = {
         method: "POST",
