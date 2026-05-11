@@ -7,7 +7,7 @@ import { OurPartners } from './OurPartners';
 // After you are finished with creating the page, move the OurValues, OurCrew, OurPartners components into their own files in this folder.
 // Import and use the components from the newly created files.
 
-export const Crew = () => {
+export const AboutUsPage = () => {
   return (
     <div className="fullBGpicture">
       <main className="mainContent">
@@ -33,4 +33,4 @@ export const Crew = () => {
   );
 }
 
-export default Crew;
+export default AboutUsPage;
