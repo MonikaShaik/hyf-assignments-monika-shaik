@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  min-height: 100vh;
+
+  background-image: url("./Hogwart.img-s/Hogwart.houses.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 100px;
+
+}
+
+#name-input {
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  border-radius: 6px;
+  width: min(500px, 100%);
+  background-color: black;
+
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgba(62, 60, 60, 0.962);
+}
+
+#members-list,
+#see-members,
+#try-again-button {
+  display: none;
+}
+
+#try-again-button {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+#see-members {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+#members-list {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 50%;
+  overflow: auto;
+}
+
+.modal {
+  position: fixed;
+  top: center;
+  left: center;
+  width: 35%;
+  height: 35%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+  inset: 0;
+}
+
+
+#house-result {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 5;
+  background-color: black;
+}
+
+.Gryffindor-image,
+.Hufflepuff-image,
+.Ravenclaw-image,
+.Slytherin-image {
+  padding: center;
+  position: fixed;
+  z-index: 1;
+  width: min(10000px, 100vw);
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 10px;
+
+}
